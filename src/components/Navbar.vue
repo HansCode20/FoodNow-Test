@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed top-0 left-0 right-0 flex items-center justify-between px-20 py-4">
+    <nav class="absolute top-0 left-0 right-0 flex items-center justify-between px-20 py-4">
       <!-- Logo -->
       <div class="flex items-center">
         <img src="../assets/img/logo.svg" alt="Logo" class="w-40">
@@ -8,7 +8,7 @@
       <!-- Menu Tengah -->
       <ul class="hidden md:block md:flex space-x-6 text-white font-semibold">
         <li><a href="#" class="hover:underline">Home</a></li>
-        <li><a href="#" class="hover:underline">Order</a></li>
+        <li><a href="#" class="hover:underline text-[#e77e23]">Order</a></li>
         <li><a href="#" class="hover:underline">About</a></li>
         <li><a href="#" class="hover:underline">Blog</a></li>
         <li><a href="#" class="hover:underline">Contact Us</a></li>
