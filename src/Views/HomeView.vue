@@ -20,12 +20,6 @@ const selectedPizza = ref(null);
 const selectedSize = ref(null);
 const selectedToppings = ref([]);
 
-// Fungsi memilih pizza
-const selectPizza = (pizza) => {
-  selectedPizza.value = pizza;
-  selectedSize.value = sizes.value.find(size => size.name === "Small") || null; // Pilih ukuran Small
-  selectedToppings.value = []; // Reset topping saat pilih pizza baru
-};
 
 // Perhitungan total harga
 const totalPrice = computed(() => {
@@ -55,15 +49,21 @@ const totalPrice = computed(() => {
 onMounted(() => {
   selectedPizza.value = pizzas.value.find(pizza => pizza.name === "Cheese Pizza") || pizzas.value[0];
   selectedSize.value = sizes.value.find(size => size.name === "Small") || sizes.value[0];
+  selectedToppings.value = selectedPizza.value?.toppings?.map(t => t.id) || [];
+
+  console.log("Selected Pizza:", selectedPizza.value);
+  console.log("Selected Toppings (IDs):", selectedToppings.value);
 });
+
 </script>
 
 <template>
   <div>
-
-    <Navbar />
-    <img src="../assets/img/hero.png" alt="Hero Image" class="w-full">
-    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="relative">
+      <Navbar />
+      <img src="../assets/img/hero.png" alt="Banner" class="w-full h-80 md:h-full object-cover" />
+    </div>
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center min-h-screen mt-20 md:mt-0">
       <div class="space-y-20">
         <PizzaList :pizzas="pizzas" v-model:selectedPizza="selectedPizza" />
         <div>
