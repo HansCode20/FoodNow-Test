@@ -8,8 +8,8 @@
         class="font-bold text-sm p-4 rounded-full transition duration-200 text-center cursor-pointer border border-gray-300"
         :class="{
           'bg-orange-200 border-orange-500 text-orange-400': selectedToppings.includes(topping.id), // Jika topping dipilih
-          'bg-white text-black': !selectedToppings.includes(topping.id), // Jika tidak dipilih
-          'cursor-not-allowed bg-black text-gray-400 border-gray-300': (selectedPizza?.toppings || []).map(String).includes(String(topping.id)) // Topping bawaan (disabled)
+          'bg-white text-black hover:bg-orange-200 ': !selectedToppings.includes(topping.id), // Jika tidak dipilih
+          'cursor-not-allowed hover:bg-white text-gray-400 border-gray-300': (selectedPizza?.toppings || []).map(String).includes(String(topping.id)) // Topping bawaan (disabled)
         }"
       >
         <input
