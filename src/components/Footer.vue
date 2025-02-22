@@ -23,14 +23,14 @@
         <!-- Navigation -->
         <div>
           <h3 class="text-xl font-semibold text-orange-500">Navigation</h3>
-          <div class="flex gap-6 mt-4 text-gray-800">
-            <ul class="space-y-4">
+          <div class="flex items-start gap-6 mt-4 text-gray-800">
+            <ul class="space-y-5">
               <li><a href="#" class="hover:text-orange-500">Home</a></li>
               <li><a href="#" class="hover:text-orange-500">Order</a></li>
               <li><a href="#" class="hover:text-orange-500">About</a></li>
               <li><a href="#" class="hover:text-orange-500">Blog</a></li>
             </ul>
-            <ul class="space-y-4">
+            <ul class="space-y-5">
               <li><a href="#" class="hover:text-orange-500">Contact</a></li>
               <li><a href="#" class="hover:text-orange-500">Login</a></li>
               <li><a href="#" class="hover:text-orange-500">Register</a></li>
@@ -41,18 +41,18 @@
         <!-- Contact -->
         <div>
           <h3 class="text-xl font-semibold text-orange-500">Contact</h3>
-          <ul class="mt-4 space-y-2 text-gray-800">
-            <li>
-              <i class="far fa-envelope text-orange-500 mr-2"></i>
+          <ul class="mt-4 space-y-3 text-gray-800">
+            <li class="flex items-center gap-2">
+              <img src="../assets/img/icons/mail.svg" alt="Email Icon" class="w-6 h-6" />
               <a href="mailto:Food.now@mail.com" class="hover:text-orange-500">Food.now@mail.com</a>
             </li>
-            <li>
-              <i class="fas fa-phone text-orange-500 mr-2"></i>
-              <a href="tel:+62848477102943" class="hover:text-orange-500">+62 848 4771 02943</a>
+            <li class="flex items-center gap-2">
+              <img src="../assets/img/icons/phone.svg" alt="Phone Icon" class="w-6 h-6" />
+              <a href="tel:+62848477102943" class="hover:text-orange-500">+62848477102943</a>
             </li>
-            <li>
-              <i class="fab fa-whatsapp text-orange-500 mr-2"></i>
-              <a href="https://wa.me/628184938494" target="_blank" rel="noopener noreferrer" class="hover:text-orange-500">+62 818 4938 494</a>
+            <li class="flex items-center gap-2">
+              <img src="../assets/img/icons/whatsapp.svg" alt="WhatsApp Icon" class="w-6 h-6" />
+              <a href="https://wa.me/628184938494" target="_blank" rel="noopener noreferrer" class="hover:text-orange-500">+628184938494</a>
             </li>
           </ul>
         </div>
@@ -60,11 +60,11 @@
         <!-- Location -->
         <div>
           <h3 class="text-xl font-semibold text-orange-500">Location</h3>
-          <div class="flex items-center gap-2 mt-4">
+          <div class="flex items-center gap-1 mt-4">
             <img src="../assets/img/icons/location.svg" alt="Location Icon" class="w-6 h-6" />
             <p class="font-bold text-lg">Kerobokan</p>
           </div>
-          <p class="text-gray-800 mt-2">
+          <p class="text-gray-800 mt-2 ml-6">
             Jl. Raya Kerobokan Br Taman, Kuta No.98,<br />
             Kerobokan Kelod, Kec. Kuta Utara,<br />
             Kabupaten Badung, Bali 80361
@@ -73,24 +73,19 @@
       </div>
   
       <!-- Copyright -->
-      <div class="text-center text-gray-600 text-sm mt-8">
+      <div class="text-left md:text-center px-10 text-gray-600 text-sm mt-8">
         <p>
           Copyright © 2022 Foodnow. All Rights Reserved.
           Powered by PT. Timedoor Indonesia. |
-          <a href="#" class="text-orange-500 hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Privacy Policy</a>
         </p>
         <p class="mt-2">
           This site is protected by reCAPTCHA and the Google
-          <a href="#" class="text-orange-500 hover:underline">Privacy Policy</a> and
-          <a href="#" class="text-orange-500 hover:underline">Terms of Service</a> apply.
+          <a href="#" class="hover:underline">Privacy Policy</a> and
+          <a href="#" class="hover:underline">Terms of Service</a> apply.
         </p>
       </div>
     </footer>
   </template>
-  
-  <script>
-  export default {
-    name: "Footer",
-  };
-  </script>
+
   
