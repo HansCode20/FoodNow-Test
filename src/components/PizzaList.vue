@@ -1,6 +1,6 @@
 <template>
   <div class="px-4 md:px-0">
-    <h2 class="mt-20 mb-10 font-bold text-2xl sm:text-3xl md:text-4xl text-[#e77e23]">
+    <h2 class="mb-10 font-bold text-2xl sm:text-3xl md:text-4xl text-[#e77e23]">
       Choose your pizza
     </h2>
     
@@ -27,7 +27,7 @@
           v-if="pizza.discount.is_active" 
           src="../assets/img/ribbon.svg" 
           alt="Discount Ribbon" 
-          class="absolute top-0 right-0 w-16 sm:w-20"
+          class="absolute top-0 right-0 w-24"
         />
 
         <!-- Gambar Pizza -->
